@@ -1,0 +1,1012 @@
+/*
+Nome da Página HTML
+*/
+
+/* --- 
+Sequência do CSS Da Página: (use esses nomes a pesquisa rápida no código.)
+
+01. Geral
+02. Nav-Bar
+03. Conteúdo 
+    01. Section 01
+    02. Section 02
+    03. Section 03
+04. Footer
+05. Media Queries
+
+--- */
+
+/* ========================================================== */
+/* 			                01 BEGIN GERAL                        */
+/* ========================================================== */
+
+/*FONTS EMBEDADAS*/
+@font-face {
+   font-family:Poppins-Regular;
+   src: url("../webfonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+   font-family:Poppins-Bold;
+   src: url("../webfonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+   font-family:Poppins-ExtraBold;
+   src: url("../webfonts/Poppins-ExtraBold.ttf");
+}
+
+@font-face {
+   font-family:Poppins-Medium;
+   src: url("../webfonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+   font-family:Poppins-Black;
+   src: url("../webfonts/Poppins-Black.ttf");
+}
+
+@font-face {
+   font-family:BebasNeue Regular;
+   src: url("../webfonts/BebasNeue Regular.otf");
+}
+
+@font-face {
+   font-family:BebasNeue Book;
+   src: url("../webfonts/BebasNeue Book.otf");
+}
+
+@font-face {
+   font-family:BebasNeue Light;
+   src: url("../webfonts/BebasNeue Light.otf");
+}
+
+@font-face {
+   font-family:BebasNeue Regular;
+   src: url("../webfonts/BebasNeue Regular.otf");
+}
+
+@font-face {
+   font-family:BebasNeue Thin;
+   src: url("../webfonts/BebasNeue Thin.otf");
+}
+
+@font-face {
+   font-family:BebasNeue Bold;
+   src: url("../webfonts/BebasNeue Bold.otf");
+}
+
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+	text-decoration: none;
+	outline: 0;
+}
+
+a, a:hover{
+	color: #fff;
+}
+/* ========================================================== */
+/*                       01 END GERAL                         */
+/* ========================================================== */
+
+
+/* ========================================================== */
+/* 			            02. BEGIN NAV-BAR                         */
+/* ========================================================== */
+.navbar {
+	width: 100%;
+	z-index: 9999;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.navbar-brand{
+  font-family: /*font-aqui*/;
+  font-size: 28px;
+  font-weight: 100;
+  color: #000!important;
+}
+
+.navbar-toggler {
+  padding: 5px 10px 5px 10px;
+  font-size: 24px;
+  line-height: 1;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid #fff;
+}
+
+.navbar-toggler-icon {
+	width: 1.3em;
+  height: 1.3em;
+}
+
+.navbar-toggler-icon i {
+  color: #fff;
+  vertical-align: middle;
+}
+
+.navbar-fixed-top {
+  position: absolute!important;
+  background-color: #FDB913!important;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04)!important;
+  border-bottom: none;
+  transition: background-color 0.25s ease 0s;
+  border-bottom: 4px solid #1d1d1b;
+}
+
+.navbar-fixed-top.opaque {
+  position: fixed!important;
+  background-color: #FDB913!important;
+  border-bottom: 4px solid #1d1d1b;
+  transition: all 0.25s ease-in-out 0s;
+}
+
+.navbar-fixed-top .navbar-nav > li > a, .navbar-fixed-top .navbar-nav > li > a:hover{
+  color: #e8c3a0!important;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navbar-fixed-top .navbar-nav > li > a{
+  color: #fff !important;
+  font-size: 16px !important;
+  line-height: 10px !important;
+  padding: 10px 15px!important;
+  font-family: /*font aqui*/;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navbar-fixed-top .navbar-nav .current a {
+  color:#e8c3a0!important;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navbar-fixed-top.opaque .navbar-nav .current a {
+  color:#e8c3a0!important;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navbar-fixed-top .navbar-nav > li > a.discover-btn {
+	border: 1px solid #dd0d44;
+	color: #dd0d44!important;
+	background: transparent;
+	border-radius: 8px 8px;
+	padding: 12px 18px!important;
+	margin-left: 10px;
+	margin-right: 15px;
+	font-family:  /*font aqui*/;
+}
+
+.navbar-fixed-top .navbar-nav > li > a.discover-btn:hover {
+	color: #fff!important;
+	background: #f6a206;
+	border: 1px solid #f6a206;
+}
+.left-menu{
+	margin-left: 70px !important;
+	margin-top: 0px;
+}
+/* ========================================================== */
+/*                   02. END NAV-BAR                          */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 			            03. BEGIN CONTEÚDO                        */
+/* ========================================================== */
+/*Begin buts*/
+.btn-primary {
+  color: #000;
+  background-color: #fdb913;
+  border-color: #fdb913;
+  font-family: 'Poppins-Bold';
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 38px;
+  border-radius: 60px;
+  border: 2px solid #000;
+}
+.btn-primary:hover {
+  color: #000;
+  background-color: #fdb913;
+  border-color: #fdb913;
+  font-family: 'Poppins-Bold';
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 38px;
+  border-radius: 60px;
+  border: 2px solid #000;
+}
+
+/*Begin Section 01*/
+.section01 {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 38px;
+  background: url(../images/sec01backhoffen.jpg) top center no-repeat;
+  background-size: cover;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.sec01titleh2um{
+  font-family: 'BebasNeue Bold';
+  text-align: right;
+  font-size: 62px;
+  line-height: 68px;
+  margin: 600px 0 0 0;
+  padding: 0;
+  color: #000;
+  text-transform: uppercase;
+}
+.sec01blockimgchope{
+  text-align: center;
+  margin: 400px 0 0 0;
+}
+.sec01titleh1{
+  font-family: 'BebasNeue Bold';
+  text-align: left;
+  font-size: 68px;
+  line-height: 74px;
+  margin: 600px 0 0 0;
+  padding: 0;
+  color: #000;
+  text-transform: uppercase;
+}
+.sec01blockbut1{
+  margin: 22px 0 0 0;
+  text-align: left;
+  padding: 0;
+}
+.sec01titleh2dois{
+  font-family: 'BebasNeue Regular';
+  text-align: center;
+  font-size: 68px;
+  line-height: 74px;
+  margin: 100px 150px 0px;
+  padding: 0;
+  color: #000;
+  text-transform: uppercase;
+}
+.sec01blockbut2{
+  text-align: center;
+  margin: 32px 0 0 0;
+}
+/*End Section 01*/
+
+/*Begin Section 02*/
+.section02 {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background: #fff;
+  background-size: cover;
+  z-index: 10;
+  overflow: hidden;
+}
+.sec02blockcerv{
+  text-align: center;
+}
+.sec02titleh3{
+  font-family: 'BebasNeue Bold';
+  text-align: center;
+  font-size: 34px;
+  line-height: 42px;
+  color: #000;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+.sec02titleh4{
+  font-family: 'BebasNeue Regular';
+  text-align: center;
+  font-size: 34px;
+  line-height: 42px;
+  color: #fdb913;
+  margin: 0;
+  padding: 0px 0 12px 0;
+}
+.sec02phtxt1{
+  font-family: 'Poppins-Regular';
+  text-align: left;
+  font-size: 20px;
+  line-height: 34px;
+  padding: 0px 0 10px 0;
+  margin: 0 11px 0;
+}
+.sec02titleh5{
+  font-family: 'BebasNeue Regular';
+  text-align: left;
+  font-size: 26px;
+  line-height: 42px;
+  color: #000;
+  margin: 0;
+  padding: 0px 11px 0;
+}
+.blockcerves2{
+  padding: 90px 0 0 0;
+}
+/*End Section 02*/
+
+/*Begin Section 03*/
+.section03 {
+  position: relative;
+  padding-top: 23px;
+  padding-bottom: 58px;
+  background: url(../images/sec03backhoffen.jpg) top center no-repeat;
+  background-size: cover;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.sec03titleh2um{
+  font-family: 'BebasNeue Bold';
+  text-align: left;
+  font-size: 62px;
+  line-height: 68px;
+  margin: 157px 0 0 0;
+  padding: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+.sec03blockimgchope{
+  text-align: center;
+  margin: 0 176px 0 -126px;
+}
+.sec03titleh1{
+  font-family: 'BebasNeue Bold';
+  text-align: left;
+  font-size: 68px;
+  line-height: 74px;
+  margin: 210px 0 0 68px;
+  padding: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+.sec03blockbut1{
+  margin: 22px 0 0 0;
+  text-align: left;
+  padding: 0;
+}
+/*End Section 03*/
+
+/*Begin Section 04*/
+.section04 {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 78px;
+  background: url(../images/sec04backhoffen.jpg) top center no-repeat;
+  background-size: cover;
+  z-index: 10;
+  overflow: hidden;
+}
+.sec04titleptxt{
+  font-family: 'BebasNeue Regular';
+  text-align: right;
+  font-size: 38px;
+  line-height: 42px;
+  margin: 0 0 42px 0;
+  padding: 0;
+  color: #000;
+  text-transform: uppercase;
+}
+.sec04blockbut1{
+  text-align: right;
+}
+/*End Section 04*/
+
+/*Begin Section 05*/
+.section05 {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 78px;
+  background: #fff;
+  background-size: cover;
+  z-index: 10;
+  overflow: hidden;
+}
+.sec05titleph2{
+  font-family: 'BebasNeue Regular';
+  text-align: left;
+  font-size: 46px;
+  line-height: 56px;
+  margin: 0 0 42px 0;
+  padding: 0;
+  color: #000;
+  text-transform: uppercase;
+}
+/*perguntas e respostas*/
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #FCBA12;
+  background-clip: border-box;
+  border: 3px solid rgb(0 0 0);
+  border-radius: 0.25rem;
+}
+.btn-link {
+  font-weight: 600;
+  color: #000000;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: transparent;
+  font-family: 'Poppins-Bold';
+  text-transform: uppercase;
+  text-decoration: none!important;
+}
+.btn-link:hover {
+  color: #000;
+  text-decoration: none!important;
+  background-color: transparent;
+  border-color: transparent;
+
+}
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  font-family: 'Poppins-Regular';
+  font-size: 18px;
+  color: #000;
+}
+.modal {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1080;
+  display: none;
+  overflow: hidden;
+  outline: 0;
+  background: #000000c2;
+  padding: 148px 0 0 0;
+}
+.modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 2px solid rgb(0 0 0);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+/*End Section 05*/
+
+/*Begin Section 0brigado*/
+.section0bg {
+  position: relative;
+  padding-top: 190px;
+  padding-bottom: 200px;
+  background: url(../images/sec0bgbackhoffen.jpg) top center no-repeat;
+  background-size: cover;
+  z-index: 10;
+  overflow: hidden;
+}
+.sec0bgtitleh2um{
+  font-family: 'BebasNeue Bold';
+  text-align: left;
+  font-size: 66px;
+  line-height: 78px;
+  margin: 60px 180px 0 0;
+  padding: 0;
+  color: #000;
+  text-transform: uppercase;
+}
+.sec0bgblockbut2{
+  text-align: left;
+  margin: 28px 0 0 0;
+}
+/*End Section 0brigado*/
+
+/* ========================================================== */
+/*                    03. END CONTEÚDO                        */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 			             04. BEGIN FOOTER                         */
+/* ========================================================== */
+.footer{
+  padding: 40px 0 40px 0;
+  background-color: #000000;
+  border-top: 1px solid #000000;
+}
+.footerblocklog{
+  text-align: left;
+}
+.footerph1 {
+  font-family: 'Poppins-Regular';
+  text-align: left;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.subfooter{
+  padding: 10px 0 10px 0;
+  background-color: #000000;
+  border-top: 1px solid #fff;
+}
+.fotrodrtxt1{
+  font-family: 'Poppins-Regular';
+  text-align: left;
+  color: #fff;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+.fotrodrtxt2{
+  font-family: 'Poppins-Regular';
+  text-align: right;
+  color: #fff;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+/* ========================================================== */
+/*                     04. END FOOTER                         */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 			         05. BEGIN MEDIA QUERIES                      */
+/* ========================================================== */
+
+/*Dispositivos small*/
+@media screen and (max-width: 600px) {
+  /*Begin Nav-Bar*/
+  .navbar-fixed-top {
+    background-color: #FDB913!important;
+    border-bottom: 4px solid #1d1d1b;
+  }
+  .navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: center;
+  }
+  /*End Nav-Bar*/
+
+  /*Begin buts*/
+  .btn-primary {
+    color: #000;
+    background-color: #fdb913;
+    border-color: #fdb913;
+    font-family: 'Poppins-Bold';
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 38px;
+    border-radius: 60px;
+    border: 2px solid #000;
+  }
+  .btn-primary:hover {
+    color: #000;
+    background-color: #fdb913;
+    border-color: #fdb913;
+    font-family: 'Poppins-Bold';
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 38px;
+    border-radius: 60px;
+    border: 2px solid #000;
+  }
+
+  /*Begin Section 01*/
+  .section01 {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 38px;
+    background: url(../images/sec01backhoffen.jpg) top center no-repeat;
+    background-size: cover;
+    z-index: 10;
+    overflow: hidden;
+  }
+
+  .sec01titleh2um{
+    font-family: 'BebasNeue Bold';
+    text-align: center;
+    font-size: 42px;
+    line-height: 46px;
+    margin: 90px 0 0 0;
+    padding: 0;
+    color: #000;
+    text-transform: uppercase;
+  }
+  .sec01blockimgchope{
+    text-align: center;
+    margin: 40px 0 0 0;
+  }
+  .sec01titleh1{
+    font-family: 'BebasNeue Bold';
+    text-align: center;
+    font-size: 46px;
+    line-height: 68px;
+    margin: 40px 0 0 0;
+    padding: 0;
+    color: #000;
+    text-transform: uppercase;
+  }
+  .sec01blockbut1{
+    margin: 6px 0 0 0;
+    text-align: center;
+    padding: 0;
+  }
+  .sec01titleh2dois{
+    font-family: 'BebasNeue Regular';
+    text-align: center;
+    font-size: 40px;
+    line-height: 44px;
+    margin: 116px 0px 0px;
+    padding: 0;
+    color: #000;
+    text-transform: uppercase;
+  }
+  .sec01blockbut2{
+    text-align: center;
+    margin: 32px 0 12px 0;
+  }
+  /*End Section 01*/
+
+  /*Begin Section 02*/
+  .section02 {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background: #fff;
+    background-size: cover;
+    z-index: 10;
+    overflow: hidden;
+  }
+  .sec02blockcerv{
+    text-align: center;
+  }
+  .sec02titleh3{
+    font-family: 'BebasNeue Bold';
+    text-align: center;
+    font-size: 34px;
+    line-height: 42px;
+    color: #000;
+    margin: 0;
+    padding: 20px 0 0 0;
+  }
+  .sec02titleh4{
+    font-family: 'BebasNeue Regular';
+    text-align: center;
+    font-size: 34px;
+    line-height: 42px;
+    color: #fdb913;
+    margin: 0;
+    padding: 0px 0 12px 0;
+  }
+  .sec02phtxt1{
+    font-family: 'Poppins-Regular';
+    text-align: left;
+    font-size: 20px;
+    line-height: 34px;
+    padding: 0px 0 10px 0;
+    margin: 0 11px 0;
+  }
+  .sec02titleh5{
+    font-family: 'BebasNeue Regular';
+    text-align: left;
+    font-size: 26px;
+    line-height: 42px;
+    color: #000;
+    margin: 0;
+    padding: 0px 11px 34px;
+  }
+  .blockcerves2{
+    padding: 0px 0 0 0;
+  }
+  /*End Section 02*/
+
+  /*Begin Section 03*/
+  .section03 {
+    position: relative;
+    padding-top: 23px;
+    padding-bottom: 58px;
+    background: url(../images/sec03backhoffenmobile.jpg) top center no-repeat;
+    background-size: cover;
+    z-index: 10;
+    overflow: hidden;
+  }
+  .sec03titleh2um{
+    font-family: 'BebasNeue Bold';
+    text-align: center;
+    font-size: 44px;
+    line-height: 50px;
+    margin: 94px 62px 0;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .sec03blockimgchope{
+    text-align: center;
+    margin: 0;
+  }
+  .imgwidth{
+    width:100%;
+  }
+  .sec03titleh1{
+    font-family: 'BebasNeue Bold';
+    text-align: right;
+    font-size: 56px;
+    line-height: 53px;
+    margin: -96px 42px 43px 0px;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .sec03blockbut1{
+    margin: 22px 0 16px 0;
+    text-align: center;
+    padding: 0;
+  }
+  /*End Section 03*/
+
+  /*Begin Section 04*/
+  .section04 {
+    position: relative;
+    padding-top: 38px;
+    padding-bottom: 400px;
+    background: url(../images/sec04backhoffenmobile.jpg) top center no-repeat;
+    background-size: cover;
+    z-index: 10;
+    overflow: hidden;
+  }
+  .sec04titleptxt{
+    font-family: 'BebasNeue Regular';
+    text-align: center;
+    font-size: 38px;
+    line-height: 42px;
+    margin: 0 0 42px 0;
+    padding: 0;
+    color: #000;
+    text-transform: uppercase;
+  }
+  .sec04blockbut1{
+    text-align: center;
+  }
+  /*End Section 04*/
+
+  /*Begin Section 05*/
+  .section05 {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 78px;
+    background: #fff;
+    background-size: cover;
+    z-index: 10;
+    overflow: hidden;
+  }
+  .sec05titleph2{
+    font-family: 'BebasNeue Regular';
+    text-align: left;
+    font-size: 46px;
+    line-height: 56px;
+    margin: 0 0 42px 0;
+    padding: 0;
+    color: #000;
+    text-transform: uppercase;
+  }
+
+  .accordionmob{
+    visibility: visible;
+  }
+  .accordiondesk{
+    display: none;
+  }
+  /*perguntas e respostas*/
+  .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #FCBA12;
+    background-clip: border-box;
+    border: 3px solid rgb(0 0 0);
+    border-radius: 0.25rem;
+  }
+  .btn-link {
+    font-weight: 600;
+    color: #000000;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: transparent;
+    font-family: 'Poppins-Bold';
+    text-transform: uppercase;
+    text-decoration: none!important;
+    padding: 0px;
+    text-align: left;
+  }
+  .btn-link:hover {
+    color: #000;
+    text-decoration: none!important;
+    background-color: transparent;
+    border-color: transparent;
+
+  }
+  .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    font-family: 'Poppins-Regular';
+    font-size: 18px;
+    color: #000;
+  }
+  .modal {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1080;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+    background: #000000c2;
+    padding: 200px 0 0 0;
+  }
+  .modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid rgb(0 0 0);
+    border-radius: 0.3rem;
+    outline: 0;
+  }
+  /*End Section 05*/
+
+  /*Begin footer*/
+  .footer{
+    padding: 40px 0 40px 0;
+    background-color: #000000;
+    border-top: 1px solid #000000;
+  }
+  .footerblocklog{
+    text-align: center;
+  }
+  .footerph1 {
+    font-family: 'Poppins-Regular';
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin: 28px 0 0 0;
+    padding: 0;
+  }
+  .subfooter{
+    padding: 10px 0 10px 0;
+    background-color: #000000;
+    border-top: 1px solid #fff;
+  }
+  .fotrodrtxt1{
+    font-family: 'Poppins-Regular';
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin: 4px 0 4px 0;
+    padding: 0;
+  }
+  .fotrodrtxt2{
+    font-family: 'Poppins-Regular';
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin: 0px 0 4px 0;
+    padding: 0;
+  }
+  /*End footer*/
+
+  /*Begin Section 0brigado*/
+  .section0bg {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 380px;
+    background: url(../images/sec0bgbackhoffenmobile.jpg) top center no-repeat;
+    background-size: cover;
+    z-index: 10;
+    overflow: hidden;
+  }
+  .sec0bgtitleh2um{
+    font-family: 'BebasNeue Bold';
+    text-align: left;
+    font-size: 40px;
+    line-height: 44px;
+    margin: 75px 145px 0 44px;
+    padding: 0;
+    color: #000;
+    text-transform: uppercase;
+  }
+  .sec0bgblockbut2{
+    text-align: left;
+    margin: 28px 0 0 0;
+  }
+  /*End Section 0brigado*/
+
+}
+
+/*Dispositivos médios (tablets com 768px ou mais)*/
+@media screen and (min-width: 768px) { ... }
+
+
+/*Dispositivos large (desktops com 992px até 1920px)*/
+@media screen and  (min-width: 992px) {
+  /*Begin Nav-Bar*/
+  .fa-bars:before {
+    content: "\f0c9";
+    color: #fff;
+  }
+  /*End Nav-Bar*/
+
+  .navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: center;
+  }
+
+  .accordionmob{
+    display: none;
+  }
+  .accordiondesk{
+    visibility: visible;
+  }
+}
+
+/* ========================================================== */
+/*                 05. END MEDIA QUERIES                      */
+/* ========================================================== */
